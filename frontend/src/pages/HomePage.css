@@ -1,0 +1,101 @@
+.home-layout {
+  display: flex;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  flex-shrink: 0;
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s ease;
+  z-index: 10;
+}
+
+.sidebar.closed {
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.station-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 60px 20px;
+  text-align: center;
+}
+.empty-state span { font-size: 40px; }
+.empty-state p    { font-weight: 600; color: var(--text-secondary); }
+.empty-state small { color: var(--text-muted); font-size: 13px; }
+
+/* ── Toggle button ── */
+.sidebar-toggle {
+  position: absolute;
+  left: 340px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-light);
+  border-left: none;
+  color: var(--text-secondary);
+  width: 22px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s ease;
+}
+.sidebar-toggle:hover { color: var(--teal); background: var(--bg-card); }
+
+.sidebar.closed ~ .sidebar-toggle {
+  left: 0;
+}
+
+/* ── Map area ── */
+.map-area {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .home-layout { flex-direction: column; }
+  .sidebar {
+    width: 100% !important;
+    height: 45%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .sidebar.closed { height: 0; width: 100% !important; }
+  .sidebar-toggle {
+    left: auto;
+    right: 12px;
+    top: auto;
+    bottom: 55%;
+    transform: none;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    width: 36px;
+    height: 36px;
+  }
+  .map-area { flex: 1; min-height: 55%; }
+}
