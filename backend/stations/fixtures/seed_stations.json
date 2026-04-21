@@ -1,0 +1,242 @@
+[
+  {
+    "model": "stations.station",
+    "pk": 1,
+    "fields": {
+      "name": "Bole EV Charging Hub",
+      "latitude": "9.0054",
+      "longitude": "38.7636",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Fast DC charging station near Bole International Airport. 4 charging bays available.",
+      "address": "Bole Road, near Airport",
+      "city": "Addis Ababa",
+      "phone": "+251911000001",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-01-10T10:00:00Z",
+      "updated_at": "2025-01-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 2,
+    "fields": {
+      "name": "Kazanchis Slow Charger",
+      "latitude": "9.0105",
+      "longitude": "38.7614",
+      "station_type": "ev",
+      "charger_type": "slow",
+      "status": "available",
+      "description": "Overnight slow AC charging. Great for staying at nearby hotels.",
+      "address": "Kazanchis Business District",
+      "city": "Addis Ababa",
+      "phone": "+251911000002",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-01-15T10:00:00Z",
+      "updated_at": "2025-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 3,
+    "fields": {
+      "name": "Megenagna Fuel Station",
+      "latitude": "9.0217",
+      "longitude": "38.7926",
+      "station_type": "fuel",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "Major fuel station at Megenagna roundabout. Petrol & diesel. 24/7.",
+      "address": "Megenagna Roundabout",
+      "city": "Addis Ababa",
+      "phone": "+251911000003",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-01-20T10:00:00Z",
+      "updated_at": "2025-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 4,
+    "fields": {
+      "name": "4 Kilo Auto Garage",
+      "latitude": "9.0367",
+      "longitude": "38.7600",
+      "station_type": "garage",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "Full-service auto repair and maintenance garage near Addis Ababa University.",
+      "address": "4 Kilo, near AAU",
+      "city": "Addis Ababa",
+      "phone": "+251911000004",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-02-01T10:00:00Z",
+      "updated_at": "2025-02-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 5,
+    "fields": {
+      "name": "Sarbet EV Charger",
+      "latitude": "8.9899",
+      "longitude": "38.7555",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "busy",
+      "description": "DC fast charger located in the Sarbet neighborhood shopping center parking.",
+      "address": "Sarbet Shopping Center",
+      "city": "Addis Ababa",
+      "phone": "+251911000005",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-02-10T10:00:00Z",
+      "updated_at": "2025-02-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 6,
+    "fields": {
+      "name": "CMC Car Wash & Service",
+      "latitude": "9.0469",
+      "longitude": "38.8019",
+      "station_type": "carwash",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "Professional car wash and detailing service in CMC area.",
+      "address": "CMC Road",
+      "city": "Addis Ababa",
+      "phone": "+251911000006",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-02-15T10:00:00Z",
+      "updated_at": "2025-02-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 7,
+    "fields": {
+      "name": "Debre Birhan Highway Fuel",
+      "latitude": "9.6800",
+      "longitude": "39.5320",
+      "station_type": "fuel",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "Fuel station on the main Addis-Debre Birhan highway. Petrol, diesel, and rest area.",
+      "address": "Main Highway, North Entry",
+      "city": "Debre Birhan",
+      "phone": "+251911000007",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-02-20T10:00:00Z",
+      "updated_at": "2025-02-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 8,
+    "fields": {
+      "name": "Adama EV Pilot Station",
+      "latitude": "8.5400",
+      "longitude": "39.2700",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Ethiopia's first highway EV charging pilot on the Addis-Adama expressway.",
+      "address": "Adama Expressway Rest Stop",
+      "city": "Adama",
+      "phone": "+251911000008",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-03-01T10:00:00Z",
+      "updated_at": "2025-03-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 9,
+    "fields": {
+      "name": "Piassa Total Fuel",
+      "latitude": "9.0270",
+      "longitude": "38.7469",
+      "station_type": "fuel",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "Total fuel station in the heart of Piassa. Open 24 hours.",
+      "address": "Piassa, Churchill Avenue",
+      "city": "Addis Ababa",
+      "phone": "+251911000009",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-03-05T10:00:00Z",
+      "updated_at": "2025-03-05T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 10,
+    "fields": {
+      "name": "Lideta Auto Mechanic",
+      "latitude": "9.0180",
+      "longitude": "38.7370",
+      "station_type": "garage",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "Experienced mechanics specializing in domestic and imported vehicles. EV-ready soon.",
+      "address": "Lideta, near Legehar",
+      "city": "Addis Ababa",
+      "phone": "+251911000010",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-03-10T10:00:00Z",
+      "updated_at": "2025-03-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 11,
+    "fields": {
+      "name": "Olympia EV Charging",
+      "latitude": "9.0010",
+      "longitude": "38.7820",
+      "station_type": "ev",
+      "charger_type": "slow",
+      "status": "offline",
+      "description": "Slow AC charger in the Olympia area. Currently undergoing maintenance.",
+      "address": "Olympia Square",
+      "city": "Addis Ababa",
+      "phone": "+251911000011",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-03-15T10:00:00Z",
+      "updated_at": "2025-03-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 12,
+    "fields": {
+      "name": "Debre Birhan Mechanic Center",
+      "latitude": "9.6750",
+      "longitude": "39.5280",
+      "station_type": "garage",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "Full auto repair workshop serving vehicles on the northern corridor.",
+      "address": "Debre Birhan Town Center",
+      "city": "Debre Birhan",
+      "phone": "+251911000012",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-03-20T10:00:00Z",
+      "updated_at": "2025-03-20T10:00:00Z"
+    }
+  }
+]
