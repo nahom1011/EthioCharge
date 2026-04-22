@@ -44,17 +44,28 @@
   margin-top: 2px;
 }
 
+.station-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.card-action-btn,
 .station-card-arrow {
   background: none;
   border: none;
   color: var(--text-muted);
   cursor: pointer;
-  padding: 4px;
+  padding: 6px;
   border-radius: 6px;
   transition: all var(--transition);
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.station-card-arrow:hover { color: var(--teal); background: var(--teal-glow); }
+.card-action-btn:hover { color: var(--teal); background: var(--teal-glow); }
+.station-card-arrow:hover { color: var(--text-primary); background: var(--bg-surface); }
 
 .station-card-badges {
   display: flex;
