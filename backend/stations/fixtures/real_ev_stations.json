@@ -98,5 +98,305 @@
       "created_at": "2026-01-05T08:00:00Z",
       "updated_at": "2026-01-05T08:00:00Z"
     }
+  },
+  {
+    "model": "stations.station",
+    "pk": 18,
+    "fields": {
+      "name": "Ethio Telecom Hub - Bole–Megenagna (North)",
+      "latitude": "9.0105000",
+      "longitude": "38.7901000",
+      "station_type": "ev",
+      "charger_type": "ultra-fast",
+      "status": "available",
+      "description": "Part of a massive hub serving up to 32 vehicles simultaneously. Features 600 kW ultra-fast chargers.",
+      "address": "Bole–Megenagna Road (North Side)",
+      "city": "Addis Ababa",
+      "phone": "994",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-01T08:00:00Z",
+      "updated_at": "2026-04-20T12:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 19,
+    "fields": {
+      "name": "Summit–Fyel Bet Superfast Hub",
+      "latitude": "9.0023000",
+      "longitude": "38.8354000",
+      "station_type": "ev",
+      "charger_type": "super-fast",
+      "status": "available",
+      "description": "Large capacity hub with 16 AI-enabled chargers specifically tailored for European-standard EVs.",
+      "address": "Summit Area, Fyel Bet",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-11-15T10:00:00Z",
+      "updated_at": "2026-04-15T09:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 20,
+    "fields": {
+      "name": "Eazy Power - Hyatt Regency Hub",
+      "latitude": "9.0108000",
+      "longitude": "38.7619000",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Upscale charging location with 24/7 assistance, located at Meskel Square.",
+      "address": "Hyatt Regency, Meskel Square",
+      "city": "Addis Ababa",
+      "phone": "+251 11 517 1234",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-02-01T08:00:00Z",
+      "updated_at": "2026-02-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 21,
+    "fields": {
+      "name": "OLA Energy / Eazy Power Africa Ave",
+      "latitude": "8.9984000",
+      "longitude": "38.7675000",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Convenient charging station located near Dembel City Center. Open 07:00 - 22:00.",
+      "address": "Africa Avenue, Dembel Roundabout",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-02-15T08:00:00Z",
+      "updated_at": "2026-02-15T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 22,
+    "fields": {
+      "name": "Master Trading Bole-Japan Hub",
+      "latitude": "8.9950000",
+      "longitude": "38.7820000",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "120-volt fast chargers capable of serving up to four vehicles simultaneously.",
+      "address": "Bole-Japan Area",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-12-10T10:00:00Z",
+      "updated_at": "2026-01-20T14:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 23,
+    "fields": {
+      "name": "Gotera Condo Charging Point",
+      "latitude": "8.9830000",
+      "longitude": "38.7650000",
+      "station_type": "ev",
+      "charger_type": "standard",
+      "status": "available",
+      "description": "Residential-adjacent charging point suitable for daily top-ups.",
+      "address": "Gotera Condominium Complex",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2023-05-09T08:00:00Z",
+      "updated_at": "2026-01-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 24,
+    "fields": {
+      "name": "Yordanos Addis Auto",
+      "latitude": "9.0200000",
+      "longitude": "38.7500000",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Private garage providing public access charging services.",
+      "address": "30071 A1",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2023-05-09T08:00:00Z",
+      "updated_at": "2023-05-09T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 25,
+    "fields": {
+      "name": "Smart Pole Charger - Meskel Sq Corridor",
+      "latitude": "9.0100000",
+      "longitude": "38.7600000",
+      "station_type": "ev",
+      "charger_type": "standard",
+      "status": "available",
+      "description": "Level II emergency top-up charger integrated into city smart poles.",
+      "address": "Meskel Square Main Corridor",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-11-01T08:00:00Z",
+      "updated_at": "2025-11-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 26,
+    "fields": {
+      "name": "Andisew Power Solution - Dembel",
+      "latitude": "8.9975000",
+      "longitude": "38.7665000",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Renewable energy focused charging station near Dembel.",
+      "address": "Dembel Area",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-03-01T09:00:00Z",
+      "updated_at": "2026-03-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 27,
+    "fields": {
+      "name": "Ethio Ev Motors Peace Ave",
+      "latitude": "9.0120000",
+      "longitude": "38.7750000",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Dealership-based charging station providing high-speed services for various models.",
+      "address": "Peace Avenue",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-10T10:00:00Z",
+      "updated_at": "2026-01-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 28,
+    "fields": {
+      "name": "Etiopikar EV Hub - Kirkos",
+      "latitude": "9.0050000",
+      "longitude": "38.7550000",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Specialized EV and hybrid charging location in Kirkos subcity.",
+      "address": "Kirkos subcity, Woreda 4",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-02-20T08:00:00Z",
+      "updated_at": "2026-02-20T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 29,
+    "fields": {
+      "name": "General Abebe Dumtew St Station",
+      "latitude": "9.0180000",
+      "longitude": "38.7450000",
+      "station_type": "ev",
+      "charger_type": "standard",
+      "status": "available",
+      "description": "Essential public charging infrastructure in a high-traffic urban zone.",
+      "address": "2 General Abebe Dumtew St",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-01T08:00:00Z",
+      "updated_at": "2026-01-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 30,
+    "fields": {
+      "name": "Smart Pole Charger - Bole Road",
+      "latitude": "8.9900000",
+      "longitude": "38.7800000",
+      "station_type": "ev",
+      "charger_type": "standard",
+      "status": "available",
+      "description": "Level II emergency top-up charger.",
+      "address": "Bole Road (Multiple Locations)",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2025-11-01T08:00:00Z",
+      "updated_at": "2025-11-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 31,
+    "fields": {
+      "name": "TotalEnergies Saris Station",
+      "latitude": "8.9600000",
+      "longitude": "38.7600000",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Recently retrofitted fuel station with dual DC fast charging piles.",
+      "address": "Saris Roundabout",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-03-10T10:00:00Z",
+      "updated_at": "2026-03-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 32,
+    "fields": {
+      "name": "EEU Headquarters Piazza",
+      "latitude": "9.0300000",
+      "longitude": "38.7500000",
+      "station_type": "ev",
+      "charger_type": "ultra-fast",
+      "status": "available",
+      "description": "Primary utility-run charging point with ultra-fast capabilities.",
+      "address": "Piazza, EEU Main Building",
+      "city": "Addis Ababa",
+      "phone": "905",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-02-15T08:00:00Z",
+      "updated_at": "2026-02-15T08:00:00Z"
+    }
   }
 ]
