@@ -26,14 +26,34 @@ export default function MapView({ stations, selectedId, onLocationFound }) {
       zoomControl: true,
     })
 
-    L.tileLayer(
-      'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+    // Satellite View
+    const satellite = L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+        maxZoom: 19,
+      }
+    )
+
+    // White (Voyager) View
+    const whiteMap = L.tileLayer(
+      'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
       {
         attribution: '© OpenStreetMap © CARTO',
         subdomains: 'abcd',
         maxZoom: 19,
       }
-    ).addTo(mapInstance.current)
+    )
+
+    // Add satellite as default
+    satellite.addTo(mapInstance.current)
+
+    // Layer control
+    const baseMaps = {
+      "Satellite View": satellite,
+      "White Map": whiteMap
+    }
+    L.control.layers(baseMaps).addTo(mapInstance.current)
 
     return () => {
       mapInstance.current?.remove()

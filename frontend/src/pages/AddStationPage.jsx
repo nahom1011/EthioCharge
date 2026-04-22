@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, useMapEvents, LayersControl } from 'react-leaflet'
 import L from 'leaflet'
 import { createStation } from '../api/stations'
 import { useAuth } from '../context/AuthContext'
@@ -166,10 +166,20 @@ export default function AddStationPage() {
                 style={{ height: '100%', width: '100%' }}
                 cursor="crosshair"
               >
-                <TileLayer
-                  url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-                  attribution="© OpenStreetMap © CARTO"
-                />
+                <LayersControl position="topright">
+                  <LayersControl.BaseLayer checked name="Satellite">
+                    <TileLayer
+                      url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+                      attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
+                    />
+                  </LayersControl.BaseLayer>
+                  <LayersControl.BaseLayer name="White Map">
+                    <TileLayer
+                      url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+                      attribution="© OpenStreetMap © CARTO"
+                    />
+                  </LayersControl.BaseLayer>
+                </LayersControl>
                 <LocationPicker position={position} setPosition={setPosition} />
               </MapContainer>
             </div>
