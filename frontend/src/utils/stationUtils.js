@@ -66,3 +66,9 @@ export function markerHtml(type, status) {
     </div>
   `
 }
+
+// Generate navigation link (Google Maps)
+export function getNavigationUrl(lat, lng, name) {
+  const query = encodeURIComponent(`${name} ${lat},${lng}`)
+  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`
+}

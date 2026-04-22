@@ -7,7 +7,7 @@ import { useAuth } from '../context/AuthContext'
 import {
   getTypeBadgeClass, getStatusBadgeClass,
   getTypeLabel, getTypeIcon, getStatusLabel,
-  getChargerLabel, renderStars, markerHtml
+  getChargerLabel, renderStars, markerHtml, getNavigationUrl
 } from '../utils/stationUtils'
 import { ArrowLeft, Star, Phone, MapPin, Zap } from 'lucide-react'
 import toast from 'react-hot-toast'
@@ -95,10 +95,17 @@ export default function StationDetailPage() {
           <span className={getStatusBadgeClass(station.status)}>
             {getStatusLabel(station.status)}
           </span>
-          {station.station_type === 'ev' && (
-            <span className="badge badge-ev"><Zap size={10} />{getChargerLabel(station.charger_type)}</span>
-          )}
-        </div>
+            {station.station_type === 'ev' && (
+              <span className="badge badge-ev"><Zap size={10} />{getChargerLabel(station.charger_type)}</span>
+            )}
+            <a 
+              href={getNavigationUrl(station.latitude, station.longitude, station.name)}
+              target="_blank" rel="noopener noreferrer"
+              className="btn btn-primary btn-sm nav-btn-top"
+            >
+              Get Directions ↗
+            </a>
+          </div>
 
         {/* Rating */}
         {stars && (

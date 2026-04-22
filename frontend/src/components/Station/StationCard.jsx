@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { MapPin, Star, ChevronRight } from 'lucide-react'
 import {
   getTypeBadgeClass, getStatusBadgeClass,
-  getTypeLabel, getTypeIcon, getStatusLabel, renderStars
+  getTypeLabel, getTypeIcon, getStatusLabel, renderStars, getNavigationUrl
 } from '../../utils/stationUtils'
 import './StationCard.css'
 
@@ -24,12 +24,23 @@ export default function StationCard({ station, isSelected, onClick }) {
             <span>{station.city}</span>
           </div>
         </div>
-        <button
-          className="station-card-arrow"
-          onClick={(e) => { e.stopPropagation(); navigate(`/stations/${station.id}`) }}
-        >
-          <ChevronRight size={16} />
-        </button>
+        <div className="station-card-actions">
+          <a 
+            href={getNavigationUrl(station.latitude, station.longitude, station.name)}
+            target="_blank" rel="noopener noreferrer"
+            className="card-action-btn"
+            onClick={(e) => e.stopPropagation()}
+            title="Navigate with Google Maps"
+          >
+            <MapPin size={15} />
+          </a>
+          <button
+            className="station-card-arrow"
+            onClick={(e) => { e.stopPropagation(); navigate(`/stations/${station.id}`) }}
+          >
+            <ChevronRight size={16} />
+          </button>
+        </div>
       </div>
 
       <div className="station-card-badges">

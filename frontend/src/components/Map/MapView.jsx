@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import { markerHtml } from '../../utils/stationUtils'
+import { markerHtml, getNavigationUrl } from '../../utils/stationUtils'
 import './MapView.css'
 
 // Ethiopia center
@@ -99,9 +99,14 @@ export default function MapView({ stations, selectedId, onLocationFound }) {
             ${isLimited ? '<span class="popup-limited">⚠ Limited data</span>' : ''}
           </div>
           ${station.phone ? `<div class="popup-phone">📞 ${station.phone}</div>` : ''}
-          <button class="popup-btn" onclick="window.__navigateTo('/stations/${station.id}')">
-            View Details →
-          </button>
+          <div class="popup-actions">
+            <button class="popup-btn" onclick="window.__navigateTo('/stations/${station.id}')">
+              View Details →
+            </button>
+            <a class="popup-btn popup-btn--nav" href="${getNavigationUrl(station.latitude, station.longitude, station.name)}" target="_blank" rel="noopener noreferrer">
+              Navigate ↗
+            </a>
+          </div>
         </div>
       `)
 
