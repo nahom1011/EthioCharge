@@ -1,0 +1,102 @@
+[
+  {
+    "model": "stations.station",
+    "pk": 13,
+    "fields": {
+      "name": "Ethio Telecom Charging Station",
+      "latitude": "8.9981920",
+      "longitude": "38.7979468",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Ultra-fast charging hub capable of serving multiple vehicles simultaneously with high-speed charging. Operates 24/7 and supports digital payments.",
+      "address": "Bole–Megenagna Road",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-01T08:00:00Z",
+      "updated_at": "2026-01-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 14,
+    "fields": {
+      "name": "Eazy Power Charging Station (Main)",
+      "latitude": "9.0103984",
+      "longitude": "38.7641180",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Leading EV charging provider offering fast and reliable charging with flexible payment options. Located near Bole / Meskel Square areas.",
+      "address": "Bole / Meskel Square Area",
+      "city": "Addis Ababa",
+      "phone": "+251941953967",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-02T08:00:00Z",
+      "updated_at": "2026-01-02T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 15,
+    "fields": {
+      "name": "TotalEnergies EV Charging Station",
+      "latitude": "8.9984178",
+      "longitude": "38.7710979",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Charging station integrated within a TotalEnergies fuel station. Convenient for EV drivers along major roads near Bole International Airport.",
+      "address": "Airport Road",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-03T08:00:00Z",
+      "updated_at": "2026-01-03T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 16,
+    "fields": {
+      "name": "Eazy Power Charging Station (Telecom Area)",
+      "latitude": "9.0059336",
+      "longitude": "38.7675381",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Branch station providing consistent EV charging services with support staff. Located near the Ethio Telecom headquarters.",
+      "address": "Ethiotelecom Area",
+      "city": "Addis Ababa",
+      "phone": "+251941953967",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-04T08:00:00Z",
+      "updated_at": "2026-01-04T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 17,
+    "fields": {
+      "name": "EVI Charging Station & Accessories",
+      "latitude": "8.9936875",
+      "longitude": "38.7924375",
+      "station_type": "ev",
+      "charger_type": "fast",
+      "status": "available",
+      "description": "Provides EV charging along with professional installation services and EV-related accessories. One-stop-shop for EV owners in Addis Ababa.",
+      "address": "Addis Ababa",
+      "city": "Addis Ababa",
+      "phone": "+251940101055",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-05T08:00:00Z",
+      "updated_at": "2026-01-05T08:00:00Z"
+    }
+  }
+]
