@@ -12,40 +12,40 @@
 }
 
 :root {
-  /* Color Palette */
-  --bg-base:        #0a0d14;
-  --bg-surface:     #111827;
-  --bg-elevated:    #1a2235;
-  --bg-card:        #1e2a3a;
-  --bg-input:       #151c2a;
+  /* Color Palette — Premium Light Theme */
+  --bg-base:        #f1f5f9;
+  --bg-surface:     #ffffff;
+  --bg-elevated:    #ffffff;
+  --bg-card:        #ffffff;
+  --bg-input:       #f8fafc;
 
-  --border:         #2d3a50;
-  --border-light:   #3d4f6a;
+  --border:         #e2e8f0;
+  --border-light:   #cbd5e1;
 
-  --text-primary:   #e8f0fe;
-  --text-secondary: #94a3b8;
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
   --text-muted:     #64748b;
 
-  --teal:           #00d4aa;
-  --teal-dim:       #00a88a;
-  --teal-glow:      rgba(0, 212, 170, 0.15);
-  --amber:          #f59e0b;
-  --amber-dim:      #d97706;
-  --red:            #ef4444;
-  --blue:           #3b82f6;
-  --purple:         #8b5cf6;
+  --teal:           #00bfa5; /* Slightly adjusted for light background */
+  --teal-dim:       #009688;
+  --teal-glow:      rgba(0, 191, 165, 0.1);
+  --amber:          #d97706;
+  --amber-dim:      #b45309;
+  --red:            #dc2626;
+  --blue:           #2563eb;
+  --purple:         #7c3aed;
 
   /* Station type colors */
-  --ev-color:       #00d4aa;
-  --fuel-color:     #f59e0b;
-  --garage-color:   #8b5cf6;
-  --carwash-color:  #3b82f6;
-  --service-color:  #ec4899;
+  --ev-color:       #00bfa5;
+  --fuel-color:     #d97706;
+  --garage-color:   #7c3aed;
+  --carwash-color:  #2563eb;
+  --service-color:  #db2777;
 
   /* Status colors */
-  --status-available: #22c55e;
-  --status-busy:      #f59e0b;
-  --status-offline:   #ef4444;
+  --status-available: #16a34a;
+  --status-busy:      #d97706;
+  --status-offline:   #dc2626;
 
   /* Spacing */
   --radius-sm:   8px;
@@ -54,10 +54,10 @@
   --radius-xl:   24px;
 
   /* Shadows */
-  --shadow-sm:   0 2px 8px rgba(0,0,0,0.3);
-  --shadow-md:   0 4px 20px rgba(0,0,0,0.4);
-  --shadow-lg:   0 8px 40px rgba(0,0,0,0.5);
-  --shadow-teal: 0 0 20px rgba(0, 212, 170, 0.2);
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md:   0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg:   0 10px 25px rgba(0,0,0,0.12);
+  --shadow-teal: 0 4px 14px rgba(0, 191, 165, 0.25);
 
   /* Transitions */
   --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -212,27 +212,27 @@ select.input option { background: var(--bg-card); }
 
 /* ── Leaflet overrides ── */
 .leaflet-container {
-  background: #0d1117 !important;
+  background: #f1f5f9 !important;
   font-family: inherit;
 }
 .leaflet-popup-content-wrapper {
-  background: var(--bg-elevated) !important;
+  background: var(--bg-surface) !important;
   color: var(--text-primary) !important;
-  border: 1px solid var(--border) !important;
+  border: none !important;
   border-radius: var(--radius-md) !important;
   box-shadow: var(--shadow-lg) !important;
 }
-.leaflet-popup-tip { background: var(--bg-elevated) !important; }
+.leaflet-popup-tip { background: var(--bg-surface) !important; }
 .leaflet-control-zoom a {
-  background: var(--bg-elevated) !important;
+  background: var(--bg-surface) !important;
   color: var(--text-primary) !important;
   border-color: var(--border) !important;
 }
 .leaflet-control-zoom a:hover {
-  background: var(--bg-card) !important;
+  background: var(--bg-base) !important;
 }
 .leaflet-control-attribution {
-  background: rgba(10,13,20,0.8) !important;
+  background: rgba(255,255,255,0.8) !important;
   color: var(--text-muted) !important;
 }
 
