@@ -1,0 +1,142 @@
+[
+  {
+    "model": "stations.station",
+    "pk": 18,
+    "fields": {
+      "name": "Electric Vehicle Charging Station",
+      "latitude": "8.9981117",
+      "longitude": "38.7977139",
+      "station_type": "ev",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "EV charging station in Addis Ababa. Limited data available — location verified via GPS coordinates only.",
+      "address": "Addis Ababa",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-06T08:00:00Z",
+      "updated_at": "2026-01-06T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 19,
+    "fields": {
+      "name": "Electric Vehicle Charging Station",
+      "latitude": "9.0058457",
+      "longitude": "38.8014674",
+      "station_type": "ev",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "EV charging station in Addis Ababa. Limited data available — location verified via GPS coordinates only.",
+      "address": "Addis Ababa",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-07T08:00:00Z",
+      "updated_at": "2026-01-07T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 20,
+    "fields": {
+      "name": "Electric Vehicle Charging Station",
+      "latitude": "9.0134623",
+      "longitude": "38.7547570",
+      "station_type": "ev",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "EV charging station in Addis Ababa. Limited data available — location verified via GPS coordinates only.",
+      "address": "Addis Ababa",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-08T08:00:00Z",
+      "updated_at": "2026-01-08T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 21,
+    "fields": {
+      "name": "Electric Vehicle Charging Station",
+      "latitude": "8.9838596",
+      "longitude": "38.7268652",
+      "station_type": "ev",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "EV charging station in Addis Ababa. Limited data available — location verified via GPS coordinates only.",
+      "address": "Addis Ababa",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-09T08:00:00Z",
+      "updated_at": "2026-01-09T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 22,
+    "fields": {
+      "name": "Electric Vehicle Charging Station",
+      "latitude": "9.0269754",
+      "longitude": "38.7524398",
+      "station_type": "ev",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "EV charging station in Addis Ababa. Limited data available — location verified via GPS coordinates only.",
+      "address": "Addis Ababa",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-10T08:00:00Z",
+      "updated_at": "2026-01-10T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 23,
+    "fields": {
+      "name": "Electric Vehicle Charging Station",
+      "latitude": "8.9954141",
+      "longitude": "38.7945992",
+      "station_type": "ev",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "EV charging station in Addis Ababa. Limited data available — location verified via GPS coordinates only.",
+      "address": "Addis Ababa",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-11T08:00:00Z",
+      "updated_at": "2026-01-11T08:00:00Z"
+    }
+  },
+  {
+    "model": "stations.station",
+    "pk": 24,
+    "fields": {
+      "name": "Electric Vehicle Charging Station",
+      "latitude": "9.0206308",
+      "longitude": "38.8133168",
+      "station_type": "ev",
+      "charger_type": "unknown",
+      "status": "available",
+      "description": "EV charging station in Addis Ababa. Limited data available — location verified via GPS coordinates only.",
+      "address": "Addis Ababa",
+      "city": "Addis Ababa",
+      "phone": "",
+      "is_approved": true,
+      "created_by": null,
+      "created_at": "2026-01-12T08:00:00Z",
+      "updated_at": "2026-01-12T08:00:00Z"
+    }
+  }
+]

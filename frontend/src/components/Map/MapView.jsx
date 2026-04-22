@@ -69,13 +69,16 @@ export default function MapView({ stations, selectedId, onLocationFound }) {
 
       const marker = L.marker([parseFloat(station.latitude), parseFloat(station.longitude)], { icon })
 
+      const isLimited = !station.phone && station.description?.includes('Limited data available')
       marker.bindPopup(`
         <div class="map-popup">
           <div class="popup-title">${station.name}</div>
           <div class="popup-meta">
             <span class="popup-city">${station.city}</span>
             <span class="popup-status popup-status--${station.status}">${station.status}</span>
+            ${isLimited ? '<span class="popup-limited">⚠ Limited data</span>' : ''}
           </div>
+          ${station.phone ? `<div class="popup-phone">📞 ${station.phone}</div>` : ''}
           <button class="popup-btn" onclick="window.__navigateTo('/stations/${station.id}')">
             View Details →
           </button>
