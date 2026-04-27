@@ -20,3 +20,6 @@ export const fetchStationReviews = (id) =>
 
 export const createReview = (data) =>
   api.post('/reviews/', data)
+
+export const syncGoogleStations = (params = {}) =>
+  api.post('/stations/sync_google/', params)

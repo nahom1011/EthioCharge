@@ -34,6 +34,25 @@ class StationViewSet(viewsets.ModelViewSet):
         serializer = ReviewSerializer(reviews, many=True)
         return Response(serializer.data)
 
+    @action(detail=False, methods=['post'], permission_classes=[permissions.IsAdminUser])
+    def sync_google(self, request):
+        from .services import GoogleMapsService
+        lat = request.data.get('lat', 9.010)
+        lng = request.data.get('lng', 38.760)
+        radius = request.data.get('radius', 50000)
+
+        service = GoogleMapsService()
+        if not service.api_key:
+            return Response({'error': 'Google Maps API key not configured'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+        stations_data = service.fetch_ev_stations(location=(lat, lng), radius=radius)
+        synced_count = service.sync_to_db(stations_data)
+
+        return Response({
+            'message': f'Successfully synced {synced_count} new stations.',
+            'total_found': len(stations_data)
+        })
+
 
 class ReviewViewSet(viewsets.ModelViewSet):
     queryset = Review.objects.all()

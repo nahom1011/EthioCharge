@@ -32,6 +32,7 @@ class Station(models.Model):
     address      = models.CharField(max_length=300, blank=True)
     city         = models.CharField(max_length=100, default='Addis Ababa')
     phone        = models.CharField(max_length=20, blank=True)
+    google_place_id = models.CharField(max_length=255, blank=True, null=True, unique=True)
     is_approved  = models.BooleanField(default=True)
     created_by   = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='stations')
     created_at   = models.DateTimeField(auto_now_add=True)

@@ -2,13 +2,16 @@ import { useState, useEffect, useCallback } from 'react'
 import MapView from '../components/Map/MapView'
 import FilterPanel from '../components/Filter/FilterPanel'
 import StationCard from '../components/Station/StationCard'
-import { fetchStations } from '../api/stations'
-import { ChevronLeft, ChevronRight, Loader } from 'lucide-react'
+import { fetchStations, syncGoogleStations } from '../api/stations'
+import { ChevronLeft, ChevronRight, Loader, RefreshCw } from 'lucide-react'
+import { useAuth } from '../context/AuthContext'
 import './HomePage.css'
 
 export default function HomePage() {
+  const { user } = useAuth()
   const [stations,    setStations]    = useState([])
   const [loading,     setLoading]     = useState(true)
+  const [syncing,     setSyncing]     = useState(false)
   const [selectedId,  setSelectedId]  = useState(null)
   const [sidebarOpen, setSidebarOpen] = useState(true)
   const [filters, setFilters] = useState({
@@ -37,15 +40,42 @@ export default function HomePage() {
     return () => clearTimeout(t)
   }, [loadStations])
 
+  const handleSync = async () => {
+    if (!window.confirm('Sync with Google Maps? This will fetch new stations near Addis Ababa.')) return
+    setSyncing(true)
+    try {
+      const { data } = await syncGoogleStations()
+      alert(data.message)
+      loadStations()
+    } catch (err) {
+      alert('Sync failed: ' + (err.response?.data?.error || err.message))
+    } finally {
+      setSyncing(false)
+    }
+  }
+
   return (
     <div className="home-layout">
       {/* Sidebar */}
       <aside className={`sidebar ${sidebarOpen ? 'open' : 'closed'}`}>
-        <FilterPanel
-          filters={filters}
-          onChange={setFilters}
-          stationCount={stations.length}
-        />
+        <div className="sidebar-header-actions">
+          <FilterPanel
+            filters={filters}
+            onChange={setFilters}
+            stationCount={stations.length}
+          />
+          {user?.is_staff && (
+            <button 
+              className={`sync-btn ${syncing ? 'syncing' : ''}`} 
+              onClick={handleSync}
+              disabled={syncing}
+              title="Sync with Google Maps"
+            >
+              <RefreshCw size={16} />
+              {syncing ? 'Syncing...' : 'Sync Google'}
+            </button>
+          )}
+        </div>
 
         <div className="station-list">
           {loading ? (
